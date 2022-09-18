@@ -1643,6 +1643,11 @@ video {
   display: inline-block;
 }
 
+.group:hover .group-hover\:bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:fill-black {
   fill: #000;
 }
