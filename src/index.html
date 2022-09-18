@@ -12,31 +12,84 @@
       rel="stylesheet"
     />
 
-    <!-- <script>
+     <script>
 
         window.addEventListener('DOMContentLoaded',() =>{
 
-            const menubtn = document.querySelector('#menu-btn')
+            const menubtn = document.querySelector('#button')
+       
 
-            const dropDown = document.querySelector('#dropDown')
+            const dropDown = document.querySelector('#scroll')
+         
 
-            menubtn.addEventListener('click',()=>{
+            
+            const left_btn = document.querySelector('#left-button')
+          
 
-                if(dropDown.classList.contains('hidden')){
+            menubtn.addEventListener('click',() =>{
 
-                    dropDown.classList.remove('hidden');
-                    dropDown.classList.add('flex');
+                if(dropDown.classList.contains('float-left')){
+
+                    dropDown.classList.remove('float-left');
+                    dropDown.classList.add('float-right');
+                    menubtn.classList.add("hidden");
+                    left_btn.classList.remove("hidden") ;  
+
+
                 }
 
-                else{
-
-                    dropDown.classList.remove('flex');
-                    dropDown.classList.add('hidden');
-                }
+               
             })
+
+            left_btn.addEventListener('click',() =>{
+
+            if (dropDown.classList.contains('float-right')){
+            
+               dropDown.classList.remove('float-right');
+                dropDown.classList.add('float-left'); 
+                left_btn.classList.add("hidden") ;  
+                menubtn.classList.remove("hidden");
+            
+            }
+
+            })
+
+// ------------------------------------------------------
+
+          const menubtn1 = document.querySelector('#button1')
+          
+
+            const dropDown1 = document.querySelector('#scroll1')
+        
+            const left_btn1 = document.querySelector('#left-button1')
+
+            menubtn1.addEventListener('click',() =>{
+
+                if(dropDown1.classList.contains('float-left')){
+
+                    dropDown1.classList.remove('float-left');
+                    dropDown1.classList.add('float-right');
+                }
+               
+               
+            })
+
+            left_btn1.addEventListener('click',() =>{
+
+            if(dropDown1.classList.contains('float-right')){
+            
+                dropDown1.classList.remove('float-right');
+                dropDown1.classList.add('float-left');
+            }
+
+            })
+
+
+
             }
     )
-    </script> -->
+    </script>  
+
     <title>Document</title>
   </head>
   <body>
@@ -873,7 +926,7 @@ Learn More
 
     <div class="flex flex-col justify-around w-72">
 
-     <img class="" src="https://assetscdn1.paytm.com/images/catalog/view_item/854033/1626081565192.png" alt="">
+     <img  class="" src="https://assetscdn1.paytm.com/images/catalog/view_item/854033/1626081565192.png" alt="">
      <h2 class="text-5xl font-extrabold w-fit font-Roboto mt-10   ">POS Billing
         Software</h2>
      <p class=" text-2xl mt-10 ">Say Hello to Smart Retail Business Management</p>
@@ -904,7 +957,7 @@ Learn More
      <h2 class="text-5xl font-extrabold font-Roboto mb-0  mt-0  ">Business Khata</h2>
    
      <p class=" text-2xl   ">Managing Khata made easy</p>
-     <a href="">Learn More</a>
+     <a class="text-2xl group " href="">Learn More <span class="hidden group-hover:inline-block transition-transform duration-700"> -></span></a>
     </div>
   </div>
   </div>
@@ -914,42 +967,42 @@ Learn More
 
 <div class="m-52 h-max w-fit relative items-center mb-96">
 
-
+  
     <div class="w-80  bg-white absolute  border-black  ">
 
-        <img class=" w-40 m-2 " src="	https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="">
-        
-       <h2 class=" text-lg font-semibold w-56 mt-10 mb-8">Get started on wealth creation journey with Zero brokerage fee & no hidden charges.</h2>
-        <a class=" text-2xl" href="">Learn More</a>
+        <img class=" w-40 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="">
+       <button id="button" href=""><img  class="relative left-72 " src="./images/icons8-forward-button-48.png" alt=""></button>
+       <h2 class=" text-lg font-semibold w-56 mb-4">Get started on wealth creation journey with Zero brokerage fee & no hidden charges.</h2>
+        <a class=" text-2xl  text-blue-300 font-bold hover:text-blue-800" href="">Learn More</a>
 
 
     </div>
 
- <div class=" flex float-left mb-20 ">
+ <div id="scroll"  class=" flex float-left mb-20 ">
     <div class="w-fit  bg-blue-500 mr-10">
 
-        <img class=" w-40 m-2" src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png" alt="">
+        <img class=" w-40 m-2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300 " src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png" alt="">
         <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Invest In Stocks</h2>
         
     </div>
 
     <div class="w-fit  bg-blue-500 mr-10"> 
-        <img class=" w-40 m-2" src="https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png" alt="">
+        <img class=" w-40 m-2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300" src="https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png" alt="">
         <h2 class="text-2xl text-white  text-center font-extrabold font-Roboto mt-10 ">Apply for IPO</h2>
     </div>
 
     <div class="w-fit  bg-blue-500 mr-10"> 
-        <img class=" w-40 m-2" src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png" alt="">
+        <img class=" w-40 m-2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300" src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png" alt="">
         <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Apply for IPO</h2>
     </div>
 
     <div class="w-fit  bg-blue-500 mr-10"> 
-        <img class=" w-40 m-2" src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png" alt="">
+        <img class=" w-40 m-2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300" src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png" alt="">
         <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Buy Gold</h2>
     </div>
 
     <div class="w-fit  bg-blue-500 mr-10"> 
-        <img class=" w-40 m-2" src="https://assetscdn1.paytm.com/images/catalog/view_item/728899/1618576408440.png" alt="">
+        <img class=" w-40 m-2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300" src="https://assetscdn1.paytm.com/images/catalog/view_item/728899/1618576408440.png" alt="">
         <h2 class="text-2xl w-40 text-center text-white font-extrabold font-Roboto mt-10 ">Invest in Mutual Funds</h2>
     </div>
 
@@ -959,54 +1012,55 @@ Learn More
 
 
 
-<div class=" w-80 h-80 bg-white absolute right-0   ">
+<div class=" w-80 h-80 bg-white absolute right-0 ">
 
-
+    <button id="left-button" href=""><img  class="relative top-20 right-6" src="./images/icons8-back-arrow-48.png" alt=""></button>
 </div>
 
 <!-- ------------------------------------------------------------------------- -->
 
 
-<div class="w-80 h-80  bg-white absolute top-96     ">
+<div class="w-80 h-80  bg-white absolute top-96 ">
 
     <img class=" w-40 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view/307197/1626419838546.png" alt="">
-    
-   <h2 class=" text-lg font-semibold w-56 mt-10 mb-8">Best travel solutions with quick ticket bookings, great offers and easy refunds</h2>
-    <a class=" text-2xl" href="">Learn More</a>
-
+    <button id="button1" href=""><img  class="relative left-72 " src="./images/icons8-forward-button-48.png" alt=""></button>
+   <h2 class=" text-lg font-semibold w-56 mb-2">Best travel solutions with quick ticket bookings, great offers and easy refunds</h2>
+    <a class=" text-2xl text-blue-300 font-bold hover:text-blue-800" href="">Learn More</a>
 
 </div>
 
-<div class=" flex float-right mb-20 mt-5">
-<div class="w-40 h-72 bg-sky-500 rounded-lg mr-10 ">
+<div id="scroll1" class=" flex float-right mb-20 mt-5">
+
+
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 ">
 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/863734/1627552693557.png" alt="">
     <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Flat 14% Cashback</h2>
     
 </div>
 
-<div class="w-40 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864144/1627566096011.png" alt="">
     <h2 class="text-2xl text-white  text-center font-extrabold font-Roboto mt-10 ">100% Refund</h2>
 </div>
 
-<div class="w-40 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864145/1627566172335.png" alt="">
     <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Flat 10% Cashback</h2>
 </div>
 
-<div class="w-40 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864151/1627567062180.png" alt="">
     <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Sanitised Bus Options With TravelSafe+</h2>
 </div>
 
-<div class="w-40 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864152/1627566492097.png" alt="">
-    <h2 class="text-2xl w-40 h-text-center text-white font-extrabold font-Roboto mt-10 ">Hassle Free Train Ticket Bookings</h2>
+    <h2 class="text-2xl text-center text-white font-extrabold font-Roboto mt-10 ">Hassle Free Train Ticket Bookings</h2>
 </div>
-<div class="w-40 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864153/1627566396231.png" alt="">
-    <h2 class="text-2xl w-40 text-center text-white font-extrabold font-Roboto mt-10 "> PNR Status Check In Few Simple Clicks</h2>
+    <h2 class="text-2xl text-center text-white font-extrabold font-Roboto mt-10 "> PNR Status Check In Few Simple Clicks</h2>
 </div>
 
 
@@ -1017,7 +1071,7 @@ Learn More
 
 <div class=" w-80 h-80 bg-white absolute right-0  top-96 ">
    
-
+    <button id="left-button1" href=""><img  class="relative top-20 right-6" src="./images/icons8-back-arrow-48.png" alt=""></button>
 
 </div>
 
@@ -1029,15 +1083,33 @@ Learn More
 
 <div class="h-96 bg-white ">
 
-   
+</div>
+
+<div class="bg-slate-200 mt-96 h-96 flex flex-row justify-around items-center ">
+
+    <div class="flex flex-row justify-between">
+
+    <div>
+        <h1 class="text-4xl font-extrabold">Download Paytm App</h1>
+        <h1 class="text-4xl font-extrabold">to Pay from anywhere</h1>
+    </div>
+  
+    <img class="w-40 ml-6" src="https://assetscdn1.paytm.com/frontendcommonweb/71229188.svg" alt="">
+    <img  class="w-40 ml-6" src="https://assetscdn1.paytm.com/frontendcommonweb/33d9d7f1.svg" alt="">
+
+    </div>
+
+    <div class="flex flex-row justify-around">
+        <img  class="w-10 ml-4" src="https://assetscdn1.paytm.com/frontendcommonweb/508b83d1.svg" alt="">
+        <img  class="w-10 ml-4 " src="https://assetscdn1.paytm.com/frontendcommonweb/f9c15a7a.svg" alt="">
+        <img  class="w-7 ml-4" src="https://assetscdn1.paytm.com/frontendcommonweb/ad9d15ee.svg" alt="">
+    </div>
+
+    <br class="bg-black p-2 h-2 ">
+
 
 </div>
 
-<div class="h-96 bg-slate-400 mt-80 ">
-
-    <h2>rudra</h2>
-
-</div>
 
 
 
