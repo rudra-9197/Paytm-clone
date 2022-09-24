@@ -92,7 +92,7 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body class="w-fit">
     <div class="flex flex-row justify-around items-center p-10 bg-white h-32">
       <div>
         <img
@@ -103,7 +103,7 @@
         />
       </div>
 
-      <div class="flex flex-row text-xl font-bold">
+      <div class="hidden flex-row text-xl font-bold sm:flex">
         <div class="">
           <div class="peer p-5 relative">
             <a id="menu-btn" class="" href="">Paytm for Consumer</a>
@@ -230,7 +230,7 @@
     </div>
 
     <div
-      class="bg-gray-300 h-14 text-center text-xl flex justify-center items-center"
+      class="bg-gray-300 h-14 text-center text-2xl flex justify-center items-center sm:text-xl"
     >
       <span
         >No Wallet KYC Required 😊 to pay using UPI on Paytm. Learn more.</span
@@ -260,16 +260,10 @@
           <span class="text-lg text-white ml-1 group-hover:text-black"
             >Download Paytm App</span
           >
-          <img
-            class="m-2 group-hover:text-black"
-            src="/src/images/apple.svg"
-            alt=""
-          />
-          <img
-            class="m-2  group-hover:fill-black"
-            src="/src/images/play.svg"
-            alt=""
-          />
+          <svg class="fill-current m-2 text-white group-hover:text-black" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="currentColor" ></path></svg>
+          <svg class="fill-current m-2 text-white group-hover:text-black"  width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="currentColor" ></path>
+          </svg>
         </button>
       </div>
       <div class="mt-20">
@@ -289,7 +283,7 @@
           Recharge & Pay Bills on Paytm.
         </h1>
 
-        <div class="flex flex-row justify-around mb-10 ml-14">
+        <div class="flex flex-wrap  justify-around mb-10 ml-10 lg:flex-nowrap">
           <div
             class="flex flex-col mt-10 p-4 rounded-2xl w-56 hover:bg-blue-500"
           >
@@ -394,13 +388,13 @@
 
     <!-- Third-section -->
 
-    <div class="bg-blue-800 flex flex-col items-center">
+    <div class="bg-blue-800 flex flex-col items-center ">
       <div class="w-4/5">
         <h1 class="text-5xl font-extrabold font-Roboto mt-16 ml-14 text-white">
           Book & Buy on Paytm.
         </h1>
 
-        <div class="flex flex-row justify-around mb-10 ml-14">
+        <div class="flex flex-wrap justify-around mb-10 ml-14 lg:flex-nowrap">
           <div
             class="flex flex-col mt-10 p-4 rounded-2xl w-56 hover:bg-blue-500"
           >
@@ -529,21 +523,15 @@
               over 21 million stores, websites and apps.
             </h2>
             <button
-              class="flex border-2 group border-black bg-black w-max p-4 rounded-full mt-8 hover:bg-white border-2-black"
+              class="flex border-2 group border-black bg-black w-max p-2 rounded-full mt-8 hover:bg-white border-2-black"
             >
               <span class="text-lg text-white ml-1 group-hover:text-black"
                 >Download Paytm App</span
               >
-              <img
-                class="m-2 group-hover:fill-black"
-                src="/src/images/apple.svg"
-                alt=""
-              />
-              <img
-                class="m-2 text-white group-hover:fill-black"
-                src="/src/images/play.svg"
-                alt=""
-              />
+              <svg class="fill-current m-2 text-white group-hover:text-black" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="currentColor" ></path></svg>
+              <svg class="fill-current m-2 text-white group-hover:text-black"  width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="currentColor" ></path>
+              </svg>
             </button>
           </div>
 
@@ -582,21 +570,15 @@
                 Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.
               </h2>
               <button
-                class="flex border-2 group border-black bg-black w-max p-4 rounded-full mt-8 hover:bg-white border-2-black"
+                class="flex border-2 group border-black bg-black w-max p-2 rounded-full mt-8 hover:bg-white border-2-black"
               >
                 <span class="text-lg text-white ml-1 group-hover:text-black"
                   >Download Paytm App</span
                 >
-                <img
-                  class="m-2 group-hover:fill-black"
-                  src="/src/images/apple.svg"
-                  alt=""
-                />
-                <img
-                  class="m-2 text-white group-hover:fill-black"
-                  src="/src/images/play.svg"
-                  alt=""
-                />
+                <svg class="fill-current m-2 text-white group-hover:text-black" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z" fill="currentColor" ></path></svg>
+                <svg class="fill-current m-2 text-white group-hover:text-black"  width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z" fill="currentColor" ></path>
+                </svg>
               </button>
             </div>
   
@@ -638,12 +620,12 @@
             With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.
             </h2>
           <button
-            class="flex border-2 group items-center  bg-blue-500 w-max p-4 rounded-full mt-8 hover:bg-blue-300 border-2-black"
+            class="flex border-2 group items-center justify-center bg-blue-500 w-56 p-2 rounded-full mt-8 hover:bg-blue-300 border-2-black"
           >
-            <span class="text-2xl text-white mb-1 group-hover:text-black"
-              >Learn More</span
+            <span class="text-2xl after:content-['>'] after:text-3xl after:ml-1 group-hover:after:content-']  text-white mb-1 group-hover:text-black"
+              >Learn More </span
             >
-            
+            <img src="" alt="">
           </button>
         </div>
 
@@ -703,13 +685,13 @@
 Learn More
       </h2>
       <button
-      class=" border-2 group   bg-blue-500 w-56  p-4 rounded-full mt-8 hover:bg-blue-300 border-2-black"
-    >
-      <span class="text-2xl text-white mb-1 group-hover:text-black"
-        >Learn More</span
-      >
-      
-    </button>
+            class="flex border-2 group items-center justify-center bg-blue-500 w-56 p-2 rounded-full mt-8 hover:bg-blue-300 border-2-black"
+          >
+            <span class="text-2xl after:content-['>'] after:text-3xl after:ml-1 group-hover:after:content-']  text-white mb-1 group-hover:text-black"
+              >Learn More </span
+            >
+            <img src="" alt="">
+          </button>
     </div>
     <div class="mr-20">
       <img
@@ -740,13 +722,13 @@ Learn More
         Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.
       </h2>
       <button
-      class=" border-2 group   bg-blue-500 w-56  p-4 rounded-full mt-8 hover:bg-blue-300 border-2-black"
-    >
-      <span class="text-2xl text-white mb-1 group-hover:text-black"
-        >Learn More</span
-      >
-      
-    </button>
+            class="flex border-2 group items-center justify-center bg-blue-500 w-56 p-2 rounded-full mt-8 hover:bg-blue-300 border-2-black"
+          >
+            <span class="text-2xl after:content-['>'] after:text-3xl after:ml-1 group-hover:after:content-']  text-white mb-1 group-hover:text-black"
+              >Learn More </span
+            >
+            <img src="" alt="">
+          </button>
     </div>
     <div class="w-fit m-20 border-2 ">
       <img
@@ -775,13 +757,13 @@ Learn More
         Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.
       </h2>
       <button
-      class=" border-2 group   bg-blue-500 w-56  p-4 rounded-full mt-8 hover:bg-blue-300 border-2-black"
-    >
-      <span class="text-2xl text-white mb-1 group-hover:text-black"
-        >Learn More</span
-      >
-      
-    </button>
+            class="flex border-2 group items-center justify-center bg-blue-500 w-56 p-2 rounded-full mt-8 hover:bg-blue-300 border-2-black"
+          >
+            <span class="text-2xl after:content-['>'] after:text-3xl after:ml-1 group-hover:after:content-']  text-white mb-1 group-hover:text-black"
+              >Learn More </span
+            >
+            <img src="" alt="">
+          </button>
     </div>
     <div class="mr-20">
       <img
@@ -811,13 +793,13 @@ Learn More
         Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.
       </h2>
       <button
-      class=" border-2 group   bg-blue-500 w-56  p-4 rounded-full mt-8 hover:bg-blue-300 border-2-black"
-    >
-      <span class="text-2xl text-white mb-1 group-hover:text-black"
-        >Learn More</span
-      >
-      
-    </button>
+            class="flex border-2 group items-center justify-center bg-blue-500 w-56 p-2 rounded-full mt-8 hover:bg-blue-300 border-2-black"
+          >
+            <span class="text-2xl after:content-['>'] after:text-3xl after:ml-1 group-hover:after:content-']  text-white mb-1 group-hover:text-black"
+              >Learn More </span
+            >
+            <img src="" alt="">
+          </button>
     </div>
     <div class="w-fit m-20 border-2 ">
       <img
@@ -979,10 +961,10 @@ Learn More
   <!-- fifteength-section -->
 
 
-<div class="m-52 h-max w-fit relative items-center mb-96">
+<div class="m-32 h-max w-fit relative items-center mb-96">
 
   
-    <div class="w-80  bg-white absolute  border-black  ">
+    <div class="w-80 h-80 bg-white absolute hidden lg:block  ">
 
         <img class=" w-40 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="">
        <button id="button" href=""><img  class="relative left-72 " src="./images/icons8-forward-button-48.png" alt=""></button>
@@ -1026,7 +1008,7 @@ Learn More
 
 
 
-<div class=" w-80 h-80 bg-white absolute right-0 ">
+<div class=" w-40 h-80 bg-white absolute right-0 hidden lg:block">
 
     <button id="left-button" href=""><img  class="relative top-20 right-6" src="./images/icons8-back-arrow-48.png" alt=""></button>
 </div>
@@ -1034,7 +1016,7 @@ Learn More
 <!-- ------------------------------------------------------------------------- -->
 
 
-<div class="w-80 h-80  bg-white absolute top-96 ">
+<div class="w-80 h-80 hidden bg-white absolute top-96 lg:block  ">
 
     <img class=" w-40 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view/307197/1626419838546.png" alt="">
     <button id="button1" href=""><img  class="relative left-72 " src="./images/icons8-forward-button-48.png" alt=""></button>
@@ -1043,38 +1025,38 @@ Learn More
 
 </div>
 
-<div id="scroll1" class=" flex float-right mb-20 mt-5">
+<div id="scroll1" class=" flex float-left mb-20 mt-5 ">
 
 
-<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 ">
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 flex flex-col justify-center items-center hover:bg-blue-500 ">
 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/863734/1627552693557.png" alt="">
-    <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Flat 14% Cashback</h2>
+    <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 m-1">Flat 14% Cashback</h2>
     
 </div>
 
-<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 flex flex-col justify-center items-center hover:bg-blue-500 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864144/1627566096011.png" alt="">
-    <h2 class="text-2xl text-white  text-center font-extrabold font-Roboto mt-10 ">100% Refund</h2>
+    <h2 class="text-2xl text-white  text-center font-extrabold font-Roboto mt-10 m-1">100% Refund</h2>
 </div>
 
-<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 flex flex-col justify-center items-center hover:bg-blue-500 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864145/1627566172335.png" alt="">
-    <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Flat 10% Cashback</h2>
+    <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10  m-1">Flat 10% Cashback</h2>
 </div>
 
-<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 flex flex-col justify-center items-center hover:bg-blue-500 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864151/1627567062180.png" alt="">
-    <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 ">Sanitised Bus Options With TravelSafe+</h2>
+    <h2 class="text-2xl text-white text-center font-extrabold font-Roboto mt-10 m-1 ">Sanitised Bus Options With TravelSafe+</h2>
 </div>
 
-<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 flex flex-col justify-center items-center hover:bg-blue-500 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864152/1627566492097.png" alt="">
-    <h2 class="text-2xl text-center text-white font-extrabold font-Roboto mt-10 ">Hassle Free Train Ticket Bookings</h2>
+    <h2 class="text-2xl text-center text-white font-extrabold font-Roboto mt-10 m-1 ">Hassle Free Train Ticket Bookings</h2>
 </div>
-<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 "> 
+<div class=" w-36 h-72 bg-sky-500 rounded-lg mr-10 flex flex-col justify-center items-center hover:bg-blue-500 "> 
     <img class=" w-20 m-2 " src="https://assetscdn1.paytm.com/images/catalog/view_item/864153/1627566396231.png" alt="">
-    <h2 class="text-2xl text-center text-white font-extrabold font-Roboto mt-10 "> PNR Status Check In Few Simple Clicks</h2>
+    <h2 class="text-2xl text-center text-white font-extrabold font-Roboto mt-10 m-1"> PNR Status Check In Few Simple Clicks</h2>
 </div>
 
 
@@ -1083,7 +1065,7 @@ Learn More
 
 
 
-<div class=" w-80 h-80 bg-white absolute right-0  top-96 ">
+<div class=" absolute right-0 w-80 h-80 bg-white top-96 hidden lg:block ">
    
     <button id="left-button1" href=""><img  class="relative top-20 right-6" src="./images/icons8-back-arrow-48.png" alt=""></button>
 
@@ -1095,11 +1077,11 @@ Learn More
 <!-- sixteength-section -->
 
 
-<div class="h-96 bg-white ">
+<div class="h-96 bg-white hidden lg:block">
 
 </div>
 
-<div class="bg-slate-200 mt-96 h-96 flex flex-row justify-around items-center ">
+<div class="bg-slate-200 mt-96 h-96 flex flex-row justify-around items-center w-full ">
 
     <div class="flex flex-row justify-between">
 
