@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" >
     <link rel="stylesheet" href="/dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:display=swap"
       rel="stylesheet"
     />
+    <style>
+      #scroll::-webkit-scrollbar{
+        display: none;
+      }
+    </style>
 
      <script>
 
@@ -92,14 +97,14 @@
 
     <title>Document</title>
   </head>
-  <body class=" w-screen m-0 p-0   ">
+  <body id="scroll" class=" w-fit lg:w-fit m-0 p-0 absolute overflow-x-hidden ">
 
 
-    <div class="w-fit flex flex-col items-center m-auto">
-    <div class="flex flex-row justify-around items-center p-10 bg-white h-32  ">
+  
+    <div class="flex flex-row justify-around  items-center p-10 bg-white h-32  ">
       <div>
         <img
-          class="w-52"
+          class="w-52 lg:w-6"
           src="	https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png
           "
           alt=""
@@ -233,7 +238,7 @@
     </div>
 
     <div
-      class="bg-gray-300 h-14 w-full text-center text-2xl flex justify-center items-center sm:text-xl"
+      class="bg-gray-300 h-14  text-center text-2xl flex justify-center items-center sm:text-xl"
     >
       <span
         >No Wallet KYC Required 😊 to pay using UPI on Paytm. Learn more.</span
@@ -242,7 +247,7 @@
 
     <!-- First-sec -->
 
-    <div class="flex  bg-white  lg:flex-col">
+    <div class="flex flex-row justify-around w-fit bg-white  lg:flex-col">
       <div class="flex flex-col m-20 h-max">
         <img
           class="w-fit"
@@ -1111,7 +1116,7 @@ Learn More
 
 </div>
 
-</div>
+
 
 
 
